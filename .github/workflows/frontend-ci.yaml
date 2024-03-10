@@ -30,11 +30,13 @@ jobs:
 
 
      # Install the dependencies.
-      - run: cd starter/frontend && npm ci
+      - run: cd starter/frontend && && npm install && npm ci
        
 
       # Run the linter.
-      - run: cd starter/frontend && npm run lint
+      - run: cd starter/frontend && npx eslint --fix .
+
+      - run: npx eslint .
 
 
   build-and-test-2:
