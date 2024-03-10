@@ -57,7 +57,7 @@ jobs:
       - run: cd starter/frontend && npm install && npm ci && nvm use
         
       # Run the tests.
-      - run: cd starter/frontend/src && npm test
+      - run: cd starter/frontend && npm test
 
 
 
