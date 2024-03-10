@@ -55,7 +55,7 @@ jobs:
       - run: cd starter/frontend && npm ci
        
       # Run the tests.
-      - run: cd frontend && npm run test
+      - run: cd starter/frontend && npm run test
 
 
 
