@@ -55,9 +55,9 @@ jobs:
 
  # Install the dependencies.
       - run: cd starter/frontend && npm install && npm ci
-       
+        
       # Run the tests.
-      - run: cd starter/frontend && npm run test
+      - run: cd starter/frontend && npm test
 
 
 
