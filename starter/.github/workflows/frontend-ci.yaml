@@ -39,7 +39,7 @@ jobs:
        
 
       # Run the linter.
-      - run: cd starter/frontend && npm run lint
+      - run: cd starter/frontend/src && npm run lint
 
 
   build-and-test-2:
@@ -60,7 +60,7 @@ jobs:
       - run: cd starter/frontend && npm ci
        
 # Run the tests.
-      - run: cd starter/frontend && npm run test
+      - run: cd starter/frontend/src && npm run test
 
 
 
