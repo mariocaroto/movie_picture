@@ -18,14 +18,9 @@ on:
 jobs:
   build-and-test-1:
     runs-on: ubuntu-latest
-
-
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v3
-
-
       - name: Set up Node.js 
         uses: actions/setup-node@v3
         with:
@@ -56,10 +51,10 @@ jobs:
           #cache: 'npm'
           cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
 
-          # Install the dependencies.
+ # Install the dependencies.
       - run: cd starter/frontend && npm ci
        
-# Run the tests.
+      # Run the tests.
       - run: cd starter/frontend && npm run test
 
 
@@ -78,8 +73,8 @@ jobs:
           #cache: 'npm'
           cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
 
-# Install the dependencies.
+           # Install the dependencies.
       - run: cd starter/frontend && npm ci
        
-# Run the tests.
+      # Run the tests.
       - run: cd starter/frontend && npm run test
