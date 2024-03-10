@@ -26,9 +26,11 @@ jobs:
         with:
           node-version: latest
           #cache: 'npm'
+          cache-dependency-path: "./starter/frontend/package-lock.json"
+
 
      # Install the dependencies.
-      - run: cd starter\frontend && npm ci
+      - run: cd starter/frontend && npm ci
        
 
       # Run the linter.
