@@ -41,7 +41,7 @@ jobs:
       # Run the linter.
       - run: cd starter/frontend && npx eslint --fix .
 
-      -run: npx eslint .
+      - run: npx eslint .
 
 
   build-and-test-2:
