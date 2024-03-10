@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: latest
           #cache: 'npm'
-          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
+          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/starter/frontend/package-lock.json"
 
 
      # Install the dependencies.
@@ -54,7 +54,7 @@ jobs:
         with:
           node-version: latest
           #cache: 'npm'
-          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
+          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/starter/frontend/package-lock.json"
 
           # Install the dependencies.
       - run: cd starter/frontend && npm ci
@@ -76,10 +76,10 @@ jobs:
         with:
           node-version: latest
           #cache: 'npm'
-          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
+          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/starter/frontend/package-lock.json"
 
 # Install the dependencies.
       - run: cd starter/frontend && npm ci
        
 # Run the tests.
-      - run: cd /home/runner/work/movie_picture/movie_picture/startet/frontend/src && npm run test
+      - run: cd /home/runner/work/movie_picture/movie_picture && npm run test
