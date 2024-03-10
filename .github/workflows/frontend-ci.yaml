@@ -34,7 +34,7 @@ jobs:
        
 
       # Run the linter.
-      - run: cd starter/frontend && npm run lint
+      - run: cd starter/frontend && npm lint
 
 
   build-and-test-2:
