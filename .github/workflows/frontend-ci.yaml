@@ -28,11 +28,11 @@ jobs:
           cache: 'npm'
 
      # Install the dependencies.
-      - run: cd frontend && npm ci
+      - run: cd starter\frontend && npm ci
        
 
       # Run the linter.
-      - run: cd frontend && npm run lint
+      - run: cd starter\frontend && npm run lint
 
 
   build-and-test-2:
@@ -49,7 +49,7 @@ jobs:
           cache: 'npm'
 
  # Install the dependencies.
-      - run: cd frontend && npm ci
+      - run: cd starter\frontend && npm ci
        
       # Run the tests.
       - run: cd frontend && npm run test
@@ -70,7 +70,7 @@ jobs:
           cache: 'npm'
 
            # Install the dependencies.
-      - run: cd frontend && npm ci
+      - run: cd starter\frontend && npm ci
        
       # Run the tests.
-      - run: cd frontend && npm run test
+      - run: cd starter\frontend && npm run test
