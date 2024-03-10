@@ -30,7 +30,7 @@ jobs:
 
 
      # Install the dependencies.
-      - run: cd starter/frontend && && npm install && npm ci
+      - run: cd starter/frontend && npm install && npm ci
        
 
       # Run the linter.
