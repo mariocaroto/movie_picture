@@ -55,6 +55,8 @@ jobs:
 
  # Install the dependencies.
       - run: cd starter/frontend && npm install && npm ci 
+
+      - run: npm run build --if-present
         
       # Run the tests.
       - run: cd /home/runner/work/movie_picture/movie_picture/starter/frontend && npm test
