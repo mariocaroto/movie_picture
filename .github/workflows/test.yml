@@ -23,5 +23,7 @@ jobs:
       run: | 
         cd starter/frontend
         npm ci
+        cd starter/frontend
         npm run build --if-present
+        cd starter/frontend
         npm test 
