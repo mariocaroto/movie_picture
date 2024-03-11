@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
-          cache-dependency-path: "starter/frontend/package-lock.json"
+          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
 
       - name: Lint
         run: |
@@ -49,7 +49,7 @@ jobs:
         with:
           node-version: ${{env.NODE_VERSION}}
           cache: 'npm'
-          cache-dependency-path: "starter/frontend/package-lock.json"
+          cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
 
       - name: Test
         run: |
