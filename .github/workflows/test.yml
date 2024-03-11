@@ -16,7 +16,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: latest
-        cache: 'npm'
+        #cache: 'npm'
         cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
 
     - name: Install, Build, Test
