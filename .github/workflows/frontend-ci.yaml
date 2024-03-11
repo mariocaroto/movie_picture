@@ -38,28 +38,35 @@ jobs:
 
       - run: npx eslint .
 
+# Build and Test Job 2
 
   build-and-test-2:
     runs-on: ubuntu-latest
+
     steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
 
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js 
-        uses: actions/setup-node@v3
+    - name: Use Node.js 
+      uses: actions/setup-node@v3
+        
         with:
           node-version: latest
-          #cache: 'npm'
+          cache: 'npm'
+          
           cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/starter/frontend/package-lock.json"
 
- # Install the dependencies.
-      - run: cd starter/frontend && npm install && npm ci 
+ # Install the dependencies
 
-      - run: cd /home/runner/work/movie_picture/movie_picture/starter/frontend && npm run build --if-present
-        
-      # Run the tests.
-      - run: cd /home/runner/work/movie_picture/movie_picture/starter/frontend && npm test
+
+    - name: Install, Build, Test
+      run: | 
+        cd starter/frontend
+        npm ci
+        npm run build --if-present
+        npm test 
+ 
+
 
 
 
