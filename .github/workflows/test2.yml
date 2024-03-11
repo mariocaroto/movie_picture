@@ -8,7 +8,6 @@ on:
       - 'starter/frontend/**'
 
 env:
-  NODE_VERSION: '18.x'
   REACT_APP_MOVIE_API_URL: 'backend.default.svc.cluster.local'
 
 jobs:
@@ -25,7 +24,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{env.NODE_VERSION}}
+          node-version: latest
           cache: 'npm'
           cache-dependency-path: "starter/frontend/package-lock.json"
 
