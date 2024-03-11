@@ -18,13 +18,10 @@ jobs:
         node-version: latest
         cache-dependency-path: "/home/runner/work/movie_picture/movie_picture/startet/frontend/package-lock.json"
 
-      uses: irby/setup-node-nvm@master
-      with:
-        node-version: lts/*
+  
 
     - name: Install, Build, Test
       run: | 
         cd starter/frontend
         npm ci
-        npm run build --if-present
         npm test 
